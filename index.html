@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EAT Team Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="page">
+    <header class="topbar">
+      <div class="container topbar__inner">
+        <div class="brand">EAT Team</div>
+
+        <nav class="nav">
+          <a href="#about">About</a>
+          <div class="nav__dropdown">
+            <a href="#projects" class="nav__dropbtn">Projects <span class="chev">▾</span></a>
+          </div>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="hamburger" aria-label="Menu" title="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">EAT Team</h1>
+          <p class="hero__subtitle">Business Information Technology Students</p>
+          <div class="hero__divider"></div>
+          <p class="hero__lead">
+            We design digital solutions that blend business thinking and technology.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects">View Projects</a>
+            <a class="btn btn--ghost" href="#contact">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <!-- Thay ảnh bằng ảnh thật: images/hero-team.jpg -->
+          <div class="hero__image" role="img" aria-label="EAT team photo"></div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section card">
+        <div class="section__head">
+          <h2>About Us</h2>
+        </div>
+
+        <p class="muted">
+          We are the EAT Team—three BIT students united by a passion for business and tech.
+          With diverse backgrounds in sales, marketing, UX design, and web development, we combine our
+          strengths to deliver effective and impactful digital solutions.
+        </p>
+
+        <div class="meta-row">
+          <div class="meta">
+            <span class="meta__icon">📍</span>
+            <span>BIT Haaga-Helia</span>
+          </div>
+          <div class="meta">
+            <span class="meta__icon">⏱</span>
+            <span>2+ Years Sales &amp; Marketing Experience</span>
+          </div>
+          <div class="meta">
+            <span class="meta__icon">🧩</span>
+            <span>Figma · GitHub · Notion</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- TEAM -->
+      <section class="section" aria-label="Team">
+        <div class="section__head section__head--plain">
+          <h2>Our Projects</h2>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="profile card">
+            <div class="profile__photo photo photo--thao" aria-label="Thao photo"></div>
+            <div class="profile__body">
+              <h3 class="profile__name">Thao Dinh</h3>
+              <p class="profile__role">BIT Student</p>
+              <span class="pill pill--warm">(Business + Tech)</span>
+              <p class="profile__text muted">
+                Background in business administration and marketing. I focus on creating practical tech solutions for business challenges.
+              </p>
+            </div>
+          </article>
+
+          <article class="profile card">
+            <div class="profile__photo photo photo--andy" aria-label="Andy photo"></div>
+            <div class="profile__body">
+              <h3 class="profile__name">Andy Nguyen</h3>
+              <p class="profile__role">BIT Student</p>
+              <span class="pill pill--cool">(Development + UX)</span>
+              <p class="profile__text muted">
+                Experienced in web development and UI/UX design. I bring coding skills and a user-centric approach to our projects.
+              </p>
+            </div>
+          </article>
+
+          <article class="profile card">
+            <div class="profile__photo photo photo--elena" aria-label="Elena photo"></div>
+            <div class="profile__body">
+              <h3 class="profile__name">Elena Bauer</h3>
+              <p class="profile__role">BIT Student</p>
+              <span class="pill pill--warm">(UX + Marketing)</span>
+              <p class="profile__text muted">
+                Background in marketing and user experience design. I ensure our solutions meet user needs and drive engagement.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <div class="section__head section__head--plain">
+          <h2>Our Projects</h2>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="project card">
+            <div class="project__thumb thumb thumb--nails" aria-label="Vietnam Nails preview"></div>
+            <div class="project__body">
+              <h3 class="project__title">Vietnam Nails <span class="muted">Booking Website</span></h3>
+              <p class="project__desc muted">Booking platform for nail salons</p>
+              <div class="project__actions">
+                <a class="btn btn--small btn--primary" href="#">Live Demo</a>
+                <a class="btn btn--small btn--ghost" href="#">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project card">
+            <div class="project__thumb thumb thumb--biz" aria-label="BizTrack preview"></div>
+            <div class="project__body">
+              <h3 class="project__title">BizTrack <span class="muted">Analytics Dashboard</span></h3>
+              <p class="project__desc muted">Business analytics tool with interactive charts</p>
+              <div class="project__actions">
+                <a class="btn btn--small btn--primary" href="#">View Case Study</a>
+                <a class="btn btn--small btn--ghost" href="#">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project card">
+            <div class="project__thumb thumb thumb--event" aria-label="EventEase preview"></div>
+            <div class="project__body">
+              <h3 class="project__title">EventEase <span class="muted">Mobile App</span></h3>
+              <p class="project__desc muted">Event planning &amp; ticketing app</p>
+              <div class="project__actions">
+                <a class="btn btn--small btn--primary" href="#">Live Demo</a>
+                <a class="btn btn--small btn--ghost" href="#">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SKILLS + CONTACT -->
+      <section class="section two-col">
+        <div class="card">
+          <div class="section__head">
+            <h2>Our Skills</h2>
+          </div>
+
+          <ul class="list">
+            <li class="list__item">
+              <span class="list__icon">🧠</span>
+              <span>BIT · Haaga-Helia</span>
+            </li>
+            <li class="list__item">
+              <span class="list__icon">📈</span>
+              <span>2+ Years Sales &amp; Marketing Experience</span>
+            </li>
+            <li class="list__item">
+              <span class="list__icon">🎨</span>
+              <span>UI/UX Design (Figma)</span>
+            </li>
+            <li class="list__item">
+              <span class="list__icon">💻</span>
+              <span>Web Dev (HTML/CSS/JS)</span>
+            </li>
+            <li class="list__item">
+              <span class="list__icon">📊</span>
+              <span>BI &amp; Data Visualization</span>
+            </li>
+          </ul>
+        </div>
+
+        <div id="contact" class="card">
+          <div class="section__head">
+            <h2>Get In Touch</h2>
+          </div>
+
+          <div class="contact">
+            <a class="contact__item" href="mailto:contact@eatteam.com">
+              <span class="contact__icon">✉️</span>
+              <span>contact@eatteam.com</span>
+            </a>
+            <a class="contact__item" href="#" target="_blank" rel="noreferrer">
+              <span class="contact__icon">in</span>
+              <span>LinkedIn</span>
+            </a>
+            <a class="contact__item" href="#" target="_blank" rel="noreferrer">
+              <span class="contact__icon">⌂</span>
+              <span>Portfolio / Website</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer muted">
+        <span>© <span id="year"></span> EAT Team</span>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    // tiny helper for year (optional)
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
